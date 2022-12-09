@@ -1,7 +1,14 @@
-import React from 'react';
-import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Form, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Login from './Login';
 
 const Header = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return (
         <Navbar bg="white" expand="lg" className='shadow-sm'>
             <Container className=''>
@@ -20,11 +27,12 @@ const Header = () => {
                 </Form>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar className="justify-content-end">
-                    <button className='header-btn '>
+                    <Link onClick={handleShow} className='header-btn text-black'>
                         Create account.  <a href="#login">It's free!</a>
-                    </button>
+                    </Link>
                 </Navbar>
             </Container>
+            <Login show={show} handleClose={handleClose}></Login>
         </Navbar>
     );
 };

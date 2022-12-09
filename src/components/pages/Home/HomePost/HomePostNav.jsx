@@ -10,19 +10,19 @@ const HomePostNav = () => {
             <Nav variant="tabs" defaultActiveKey="/home" className='justify-content-between'>
                 <Nav>
                     <Nav.Item>
-                        <Nav.Link hrefLang="/home">All Post</Nav.Link>
+                        <Nav.Link className='text-black' to="/home">All Post</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link to="/">Article</Nav.Link>
+                        <Nav.Link className='text-black' to="/">Article</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link to="/">Event</Nav.Link>
+                        <Nav.Link className='text-black' to="/">Event</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link to="/">Education</Nav.Link>
+                        <Nav.Link className='text-black' to="/">Education</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link to="/">Job</Nav.Link>
+                        <Nav.Link className='text-black' to="/">Job</Nav.Link>
                     </Nav.Item>
                 </Nav>
                 <Nav >
