@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
 import Login from './Login';
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <Navbar bg="white" expand="lg" className='shadow-sm'>
+        <Navbar bg="white" className='shadow-sm d-none d-lg-block'>
             <Container className=''>
                 <Navbar.Brand href="#">ATG.WORLD</Navbar.Brand>
                 <Form className="d-flex justify-content-center w-50 search-bar">
