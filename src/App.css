@@ -109,6 +109,11 @@ p{
   background-position: center;
 }
 
+.login-icon{
+  width: 25px;
+  margin-right: 10px;
+}
+
 .modal-header{
   color: #008A45;
   background-color: #EFFFF4;
